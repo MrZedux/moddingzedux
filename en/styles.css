@@ -1,0 +1,109 @@
+/* Reset des marges et paddings pour le corps et HTML */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Utilisation de flexbox pour organiser la page */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif; /* Police par défaut */
+  background-color: #f8f9fa; /* Couleur de fond générale */
+  color: #343a40; /* Couleur de texte principale */
+}
+
+/* Style pour le header */
+header {
+  background-color: #343a40; /* Couleur de fond du header */
+  color: white; /* Couleur de texte pour le header */
+  padding: 10px 0; /* Espacement intérieur */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Texte en gras pour la marque */
+}
+
+.navbar-nav .nav-link {
+  color: white; /* Couleur de lien dans la barre de navigation */
+}
+
+/* Contenu principal s'étend pour remplir l'espace disponible */
+main {
+  flex: 1; /* Le contenu principal prend tout l'espace restant */
+  padding: 20px; /* Espacement intérieur */
+}
+
+/* Style pour la section de présentation */
+#presentation {
+  margin-top: 20px; /* Marge en haut de la section de présentation */
+}
+
+/* Style pour la section de téléchargement */
+#telechargement {
+  padding: 20px; /* Espacement intérieur pour la section de téléchargement */
+}
+
+/* Style pour chaque bloc de téléchargement */
+.telechargement-bloc {
+  margin-bottom: 40px; /* Espacement entre les blocs de téléchargement */
+}
+
+/* Style pour les titres des blocs de téléchargement */
+.telechargement-bloc h3 {
+  margin-bottom: 10px; /* Espacement en dessous du titre */
+}
+
+/* Style pour les sous-titres des blocs de téléchargement */
+.telechargement-bloc h4 {
+  margin-top: 15px; /* Espacement au-dessus du sous-titre */
+}
+
+/* Style pour les listes des blocs de téléchargement */
+.telechargement-bloc ul {
+  list-style-type: none; /* Suppression des puces de liste */
+  padding: 0; /* Réinitialisation du padding */
+}
+
+/* Style pour les liens des blocs de téléchargement */
+.telechargement-bloc ul li a {
+  text-decoration: none; /* Pas de soulignement pour les liens */
+  color: #007bff; /* Couleur de lien par défaut */
+}
+
+.telechargement-bloc ul li a:hover {
+  text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Style pour le footer */
+footer {
+  background-color: #343a40; /* Couleur de fond du footer */
+  color: white; /* Couleur de texte pour le footer */
+  text-align: center; /* Centrage du texte */
+  padding: 10px 0; /* Espacement intérieur */
+  width: 100%; /* Largeur pleine */
+  position: fixed; /* Position fixe en bas de la fenêtre */
+  bottom: 0; /* Collé en bas */
+}
+
+/* Styles pour les liens dans le footer */
+footer a {
+  color: white; /* Couleur de lien dans le footer */
+  text-decoration: none; /* Pas de soulignement par défaut */
+  transition: color 0.3s; /* Transition fluide pour la couleur de lien */
+}
+
+footer a:hover {
+  color: #ccc; /* Couleur de lien au survol */
+}
+
+/* Media query pour la responsivité */
+@media (max-width: 767px) {
+  .navbar-toggler {
+    order: 1; /* Réorganiser l'icône de basculement en premier */
+  }
+  .collapse.navbar-collapse {
+    order: 3; /* Réorganiser le menu de navigation en dernier */
+  }
+}
