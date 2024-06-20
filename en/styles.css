@@ -107,3 +107,15 @@ footer a:hover {
     order: 3; /* Réorganiser le menu de navigation en dernier */
   }
 }
+
+/* Styles pour les images fluides */
+.img-fluid {
+  max-width: 100%; /* L'image ne dépasse jamais la largeur de son conteneur */
+  height: auto; /* La hauteur s'ajuste automatiquement pour garder les proportions */
+}
+
+/* Styles pour les petites images */
+.img-small {
+  max-width: 800px; /* Limite la largeur à 200px */
+  height: auto; /* La hauteur s'ajuste automatiquement pour garder les proportions */
+}
