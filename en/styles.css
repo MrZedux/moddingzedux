@@ -100,11 +100,11 @@ footer a:hover {
 
 /* Media query pour la responsivité */
 @media (max-width: 767px) {
-  .navbar-toggler {
-    order: 1; /* Réorganiser l'icône de basculement en premier */
-  }
-  .collapse.navbar-collapse {
-    order: 3; /* Réorganiser le menu de navigation en dernier */
+  .img-small {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 
